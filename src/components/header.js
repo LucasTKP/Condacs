@@ -1,18 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/components/header.sass'
 import { ReactComponent as Logo } from '../image/logoCondacs.svg';
 
 export function Header() {
+  const [visible, setVisible] = useState(true)
+
   return (
     <div className="background">
       <div className='config'>
         <div className='header'>
           <Logo />
-          <div className='navigation'>
-            <a href="#about">Sobre</a>
-            <a href="#services">Serviços</a>
-            <a href="#contact">Contato</a>
-            <a href="#Login">Login</a>
+          <button className="hamburguer" onClick={() => setVisible(!visible)}></button>
+          <div className={visible ? 'navigation' : "navigationCascata"}>
+            <a href="#about" onClick={() => setVisible(!visible)} >Sobre</a>
+            <a href="#services" onClick={() => setVisible(!visible)} >Serviços</a>
+            <a href="#contact"onClick={() => setVisible(!visible)} >Contato</a>
+            <button>Login</button>
           </div>
         </div>
 

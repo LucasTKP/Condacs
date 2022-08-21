@@ -9,6 +9,7 @@ import '../styles/pages.sass'
 
 export function Pages() {
   return (
+    <div className="body">
     <div className="pages">
         <Header />
       <div className="align">
@@ -17,6 +18,7 @@ export function Pages() {
         <Local />
       </div>
       <Contact />
+    </div>
     </div>
   )
 }
