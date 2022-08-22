@@ -17,10 +17,12 @@ export function Local() {
         <div className="images">
           <div>
             <a href={LinkMaps} target="__blank">
-              <img src={Maps} className="imageMaps" alt="Imagem da localização no google maps"></img>
+            <img src={Maps} className="imageMaps" alt="Imagem da localização no google maps"></img>
             </a>
             <div className="clock">
-              <Clock />
+              <div>
+                <Clock />
+              </div>
               <p>Abertos de segunda a sexta - 08:00 hrs ás 18:00 hrs</p>
             </div>
           </div>
