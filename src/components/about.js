@@ -8,7 +8,7 @@ export function About() {
   return (
     <div id='about'>
         <div className="textAbout">
-            <p className="p1">Sobre Nós</p>
+            <p>Sobre Nós</p>
             <p>Com mais de 30 anos de experiência na área contabil, conheça nossas principais ideologias:</p>
         </div>
 
@@ -30,21 +30,24 @@ export function About() {
             </button>
         </div>
 
-        <h6>Confira alguns números da Condacs</h6>
-        <div className="statistics">
-            <div>
-                <h1>100+</h1>
-                <p>Clientes em todo o Brasil</p>
+        <div className="contentStatistics">
+            <h6>Confira alguns números da Condacs</h6>
+            <div className="statistics">
+                <div>
+                    <h1>100+</h1>
+                    <p>Clientes em todo o Brasil</p>
+                </div>
+                <div>
+                    <h1>96%</h1>
+                    <p>De taxa de sucesso</p>
+                </div>
+                <div>
+                    <h1>100%</h1>
+                    <p>De disponibilidade para você</p>
+                </div>
             </div>
-            <div>
-                <h1>96%</h1>
-                <p>De taxa de sucesso</p>
-            </div>
-            <div>
-                <h1>100%</h1>
-                <p>De disponibilidade para você</p>
-            </div>
-        </div>
+            <div className="details"></div>
+        </div>    
     </div>
   )
 }
