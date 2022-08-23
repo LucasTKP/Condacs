@@ -44,7 +44,7 @@ export function Contact() {
                 <div className={redesocial ? "contenteSocialCell" : "contentSocial"} onClick={() => {redesocial ? setRedesocial(!redesocial) : setRedesocial(redesocial)}}>
                     <div className="modal">
                         <h3>{redesocial ? "Nossos numeros" : "Sociais"}</h3>
-                        <div className="details"></div>
+                        <div className="buttonClose"></div>
                         <div className="networkSocial">
                             <a href="https://www.facebook.com/Condacs-Contabilidade-103618002125801/" rel="noreferrer" target="_blank">
                                 <IconFacebook />
