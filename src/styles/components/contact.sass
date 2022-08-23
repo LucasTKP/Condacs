@@ -8,143 +8,133 @@ $details-color: #D6AF4F
     width: 100%
     height: 89.6rem
 
-.contentCondacs2
-    display: flex
-    justify-content: center
+    .contentCondacs2
+        display: flex
+        justify-content: center
 
-.contentCondacs
-    margin-top: 8.7rem 
-    display: flex
-    width: 134.4rem
-    justify-content: space-between
+    .contentCondacs
+        margin-top: 8.7rem 
+        display: flex
+        width: 134.4rem
+        justify-content: space-between
 
-.contentContact
-    width: 100%
-    display: flex
-    flex-direction: column
-    align-items: center
+    .contentContact
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        p
+            font-size: 4.8rem
+            font-weight: 400   
+            font-family: "Inter" 
+            height: 6rem    
+        form
+            margin-top: 5rem
+            display: flex
+            flex-direction: column
 
     .windowSocial
         display: none
 
-    p
-        font-size: 4.8rem
-        font-weight: 400   
-        font-family: "Inter" 
-        height: 6rem
+    .inputs
+        background: none
+        padding: 1rem
+        outline: 0
+        border: none
+        border-bottom: 1px solid $base-color
+        max-width: 52.7rem
+        max-height: 5rem
+        margin: 2rem
+        font-family: 'Inter'
+        font-weight: 300
+        font-size: 2.6rem
+        color: white
+        &::placeholder
+                color: white
 
-    .details
-        width: 200px
-        height: .5rem
-        background: white
-           
-    form
-        margin-top: 5rem
+    .enviar
+        margin-top: 7.5rem
+        width: 21.1rem
+        height: 5.8rem
+        border: 3px solid $details-color
+        border-radius: .8rem
+        align-self: center
+        background: none
+        &:hover
+            background: rgba(164, 125, 59, 0.5)
+        :first-child
+            font-size: 2.4rem
+            font-weight: 500
+            font-size: 'Inter'
+        
+    .contentSocial
+        width: 100%
         display: flex
         flex-direction: column
-
-        .inputs
-            background: none
-            padding: 1rem
-            outline: 0
-            border: none
-            border-bottom: 1px solid $base-color
-            max-width: 52.7rem
-            max-height: 5rem
-            margin: 2rem
+        align-items: center
+        h3
+            font-size: 4.8rem
+            font-weight: 400   
+            font-family: "Inter" 
+            position: relative
+            padding-bottom: 1rem
+        p
+            margin-top:1rem  
+            font-family: 'Josefin Sans'
+            font-weight: 300
+            font-size: 2.4rem
+        
+        h2
             font-family: 'Inter'
             font-weight: 300
-            font-size: 2.6rem
-            color: white
-            &::placeholder
-                 color: white
+            font-size: 3rem
+            margin-left: 1rem
+            height: 100%
 
-.enviar
-    margin-top: 7.5rem
-    width: 21.1rem
-    height: 5.8rem
-    border: 3px solid $details-color
-    border-radius: .8rem
-    align-self: center
-    background: none
-    &:hover
-        background: rgba(164, 125, 59, 0.5)
-
-    :first-child
-        font-size: 2.4rem
-        font-weight: 500
-        font-size: 'Inter'
-    
-    
-
-.contentSocial
-    width: 100%
-    display: flex
-    flex-direction: column
-    align-items: center
-    h3
-        font-size: 4.8rem
-        font-weight: 400   
-        font-family: "Inter" 
-        position: relative
-        padding-bottom: 1rem
     .details
         width: 200px
         height: .5rem
         background: white
-    p
-        margin-top:1rem  
-        font-family: 'Josefin Sans'
-        font-weight: 300
-        font-size: 2.4rem
-    
-    h2
-        font-family: 'Inter'
-        font-weight: 300
-        font-size: 3rem
-        margin-left: 1rem
-        height: 100%
 
-
-.networkSocial
-    margin-top:4rem
-
-    :first-child
-        padding-right: 5rem 
-    
-.whatsapp
-    display: flex
-    align-items: center
-    margin: 3rem 0 3rem 0
-
-.navBar
-    margin-top: 10rem
-    display: flex
-    justify-content: space-between
-    justify-content: center
-    
-.contentNavBar
-    display: flex
-    justify-content: space-between
-    align-items: center
-    width: 120rem
-    margin: 0 1rem
-    position: relative
-    &::before
-           content: ""
-           width: 100%
-           height: .2rem
-           background: $base-color
-           position: absolute
-           bottom: 8rem
-           left: 0
-    p
-        align-items: center
+    .networkSocial
+        width: 100px
+        margin-top:4rem
         display: flex
-        font-family: 'Inter'
-        font-weight: 300
-        font-size: 2.4rem
-        height: 100%
+        justify-content: space-between
+        
+    .whatsapp
+        display: flex
+        align-items: center
+        margin: 3rem 0 3rem 0
+
+    .navBar
+        margin-top: 10rem
+        display: flex
+        justify-content: space-between
+        justify-content: center
+        
+    .contentNavBar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 120rem
+        margin: 0 1rem
+        position: relative
+        &::before
+            content: ""
+            width: 100%
+            height: .2rem
+            background: $base-color
+            position: absolute
+            bottom: 8rem
+            left: 0
+        p
+            align-items: center
+            display: flex
+            font-family: 'Inter'
+            font-weight: 300
+            font-size: 2.4rem
+            height: 100%
 
     
 
@@ -152,19 +142,21 @@ $details-color: #D6AF4F
     #contact
         height: 80rem
 
-    .contentSocial
-        display: none 
-    
-    .contentCondacs
-        justify-content: center
-        position: relative
-    
-    .contentContact
-        align-items: center
-        display: flex
-        flex-direction: column
-        width: 100%
-    
+        .contentSocial
+            display: none 
+        
+        .contentCondacs
+            justify-content: center
+            position: relative
+        
+        .contentContact
+            align-items: center
+            display: flex
+            flex-direction: column
+            width: 100%
+            form
+                margin-top: 10px
+        
         .enviar
             align-self: center
 
@@ -173,34 +165,34 @@ $details-color: #D6AF4F
             display: flex
             margin-top: 4rem
 
-            .activeModal
-                cursor: pointer
+        .activeModal
+            cursor: pointer
 
-            .divWhatsapp
-                background: none
-                border: none
-                justify-self: flex-start
-                align-self: flex-start
-                
-            .middleIcon
-                padding: 0 5px
-        
-        
+        .divWhatsapp
+            background: none
+            border: none
+            justify-self: flex-start
+            align-self: flex-start
+                    
+        .middleIcon
+            padding: 0 5px
 
-    .contenteSocialCell
-        width: 100%
-        height: 100%
-        position: absolute
-        background: rgba(0, 0, 0, 0.8)
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: center
-        border-radius: 20px
-        
+        .contenteSocialCell
+            width: 100%
+            height: 100%
+            position: absolute
+            background: rgba(0, 0, 0, 0.2)
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            border-radius: 20px
+            backdrop-filter: blur(10px)
+            
+            
+            
         .modal
             padding: 2rem 4rem
-            position: absolute
             background: $base-color
             display: flex
             flex-direction: column
@@ -208,38 +200,35 @@ $details-color: #D6AF4F
             justify-content: center
             border-radius: 20px
             position: relative
-
-            
-            .details
-                cursor: pointer
+        
+        .buttonClose
+            cursor: pointer
+            width: 40px
+            height: 5px 
+            border-radius: .8rem
+            background: #fff
+            position: absolute
+            transform: rotate(45deg)
+            right: 3%
+            top: 10%
+            display: flex
+            justify-self: center
+            align-self: center
+            &::before
+                content: ""
+                position: absolute
                 width: 40px
                 height: 5px 
+                left:0
+                transform: rotate(90deg)
                 border-radius: .8rem
                 background: #fff
-                position: absolute
-                transform: rotate(45deg)
-                right: 3%
-                top: 10%
-                display: flex
-                justify-self: center
-                align-self: center
-                &::before
-                    content: ""
-                    position: absolute
-                    width: 40px
-                    height: 5px 
-                    left:0
-                    transform: rotate(90deg)
-                    border-radius: .8rem
-                    background: #fff
 
         .networkSocial
             display: none
-        
         h3
             font-family: 'Inter'
             font-size: 3rem
-
         p   
             font-family: 'josefin Sans'
             margin: 20px 0 0 0
@@ -251,75 +240,77 @@ $details-color: #D6AF4F
                 font-family: 'Inter'
                 margin-left: 10px
                 font-size: 3rem
-    .navBar
-        margin-top: 5rem
+        .navBar
+            margin-top: 5rem
   
 
 @media (max-width: 615px)
     #contact
         height: 68rem
 
-    .contentContact
-        p
-            font-size: 3.5rem
-            height: 40px
+        .contentCondacs
+            margin-top: 5rem 
 
-        .details
-            width: 150px
+        .contentContact
+            p
+                font-size: 3.5rem
+                height: 40px
 
-        form
-            margin-top: 10px
-            width: 300px
+            form
+                margin-top: 10px
+                width: 300px
 
-            .inputs
-                font-size: 2rem
+        .inputs
+            font-size: 2rem
 
         .enviar
             margin-top: 3.5rem
             width: 12rem
             align-self: center
             height: 5rem
-                
-    .contentNavBar
-        p
-            font-size: 2rem
-            max-width: 240px
+                    
+        .contentNavBar
+            p
+                font-size: 2rem
+                max-width: 240px
+            :last-child
+                width: 80px
 
-        :last-child
-            width: 80px
-
-    .contenteSocialCell
-        .modal 
-            .details
-                width: 25px
-                height: 5px 
-                &::before
-                    width: 25px
-                    height: 5px
-    
-        h3
-            font-size: 2.5rem
-        p   
-            font-size: 2rem
+        .contenteSocialCell
+            h3
+                font-size: 2.5rem
+            p   
+                font-size: 2rem
         .whatsapp
             svg 
                 width: 30px
             h2
                 font-size: 2rem
+        .buttonClose
+            width: 25px
+            height: 5px 
+            &::before
+                width: 25px
+                height: 5px
+        .details
+            width: 100px
+            height: .5rem
+            background: white
+    
+        
      
 
 @media (max-width: 450px)
-
-    .contentContact
-        p
-            font-size: 2.5rem
-            height: 30px
+    #contact
+        .contentContact
+            p
+                font-size: 2.5rem
+                height: 30px
+            form
+                width: 250px
 
         .details
             width: 100px
-
-        form
-            width: 250px
 
         .enviar
             margin-top: 3rem
@@ -330,17 +321,16 @@ $details-color: #D6AF4F
             border-radius: .8rem
             margin-left: 2rem
             background: none
-
             :first-child
                 font-size: 1.5rem
                 font-weight: 500
                 font-size: 'Inter'
 
-    .contentNavBar
-        p
-            font-size: 1.5rem
-            max-width: 240px
-        :last-child
-            width: 80px
+        .contentNavBar
+            p
+                font-size: 1.5rem
+                max-width: 240px
+            :last-child
+                width: 80px
 
     
