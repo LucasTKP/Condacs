@@ -24,9 +24,11 @@ export function Header() {
           <p>Acessoria Contábil</p>
         </div>
 
-        <button type="submit" className="buttonContato">
-          <p>Contate-nos</p>
+        <a href="#contact">
+        <button className="buttonContato">
+            <p>Contate-nos</p>
         </button>
+        </a>
         
       </div>
     </div>

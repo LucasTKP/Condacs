@@ -1,13 +1,22 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import '../styles/components/contact.sass'
 import { ReactComponent as Logo } from '../image/logo.svg';
 import { ReactComponent as IconFacebook } from '../image/iconFacebook.svg';
 import { ReactComponent as IconInstagram } from '../image/iconInstagram.svg';
 import { ReactComponent as IconWhatsapp } from '../image/iconWhatsapp.svg';
+import emailjs from '@emailjs/browser';
 
 export function Contact() {
-    async function Teste(event){
-        event.preventDefault()
+    const form = useRef();
+    async function EnviarEmail(e){
+        e.preventDefault();
+        emailjs.sendForm('gmailMessage', 'template_wfzeqbq', form.current, 'DpHAZuXmqqhMciFdh')
+          .then((result) => {
+              alert("Mensagem Enviada com sucesso! :)")
+          }, (error) => {
+            alert(error.message)
+          });
+          e.target.reset()
     }
 
     const[redesocial, setRedesocial] = useState(false)
@@ -19,11 +28,10 @@ export function Contact() {
                 <div className="contentContact">
                     <p>Contato</p>
                     <div className="details"></div>
-                    <form onSubmit={Teste}>
-                        <input type="email"  required  placeholder="Seu Email" className="inputs"></input>
-                        <input type="text"   required  placeholder="Seu Nome" className="inputs"></input>
-                        
-                        <input type="text" required  placeholder="Sua Mensagem" className="inputs"></input>
+                    <form ref={form} onSubmit={EnviarEmail}>
+                        <input type="email"  required  placeholder="Seu Email" className="inputs" name="email"></input>
+                        <input type="text"   required  placeholder="Seu Nome" className="inputs" name="name"></input>
+                        <input type="text" required  placeholder="Sua Mensagem" className="inputs" name="message"></input>
                         <button type="submit" className='enviar'>
                             <h1>Enviar</h1>
                         </button>
@@ -55,22 +63,26 @@ export function Contact() {
                             </a>
                         </div>
 
-                        <p>Advocacia</p>
-                        <div className="whatsapp">
-                            <IconWhatsapp />
-                            <h2>(16) 99999-9999</h2>
-                        </div>
-
-                        <p>Financeiro</p>
-                        <div className="whatsapp">
-                            <IconWhatsapp />
-                            <h2>(16) 99999-9999</h2>
-                        </div>
-
                         <p>Contabilidade</p>
                         <div className="whatsapp">
-                            <IconWhatsapp />
-                            <h2>(16) 99999-9999</h2>
+                            <a href="https://api.whatsapp.com/send?phone=5516993344700" rel="noreferrer" target="_blank">
+                                <IconWhatsapp />
+                            </a>
+                            <h2>(16) 99334-4700</h2>
+                        </div>
+
+                        <p>Fiscal</p>
+                        <div className="whatsapp">
+                            <a href="https://api.whatsapp.com/send?phone=5516994423535">
+                                <IconWhatsapp />
+                            </a>
+                            <h2>(16) 99442-3535</h2>
+                        </div>
+
+                        <p>Escritorio</p>
+                        <div className="whatsapp">
+                            <h3>📞</h3>
+                            <h2>(16) 3725-0009</h2>
                         </div>
                     </div>
                 </div>
