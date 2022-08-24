@@ -4,10 +4,10 @@ import { About } from '../components/about'
 import { Services } from '../components/services' 
 import { Local } from '../components/local' 
 import { Contact } from '../components/contact'
-import '../styles/pages.sass'
+import '../styles/home.sass'
 
 
-export function Pages() {
+export function Home() {
   return (
     <div className="body">
     <div className="pages">
