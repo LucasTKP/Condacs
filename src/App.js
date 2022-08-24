@@ -1,8 +1,8 @@
-import { Pages } from './routes/pages'
+import { StackRoutes } from './routes/Stack.Routes'
 
 function App() {
   return (
-        <Pages /> 
+        <StackRoutes /> 
   );
 }
 
