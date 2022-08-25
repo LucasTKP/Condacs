@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Routes, Route} from "react-router-dom";
 import { Home } from "./Home"
-import { PageService } from "../components/PageService"
+import { PageService } from "./PageService"
 
 export function StackRoutes() {
   return (
