@@ -20,6 +20,7 @@ export function About() {
     }
   return (
     <div id='about'>
+        
         <div onClick={() => setModal(!modal)} className={modal ? 'backgroundModalOn' : "backgroundModalOff"}>
             <div id="outModal">
                 <button className='modal'>
@@ -36,7 +37,7 @@ export function About() {
             <p>Sobre Nós</p>
             <p>Com mais de 30 anos de experiência na área contabil, conheça nossas principais ideologias:</p>
         </div>
-
+        <div className="config">
         <div className="buttonAbout">
             <a href='#outModal'>
                 <button type="button" className="card" onClick={() => (setModal(true) & GiveContentModal('confianca'))}>
@@ -61,6 +62,7 @@ export function About() {
                     <p>Ver mais</p>
                 </button>
             </a>
+        </div>
         </div>
 
         <div className="contentStatistics">

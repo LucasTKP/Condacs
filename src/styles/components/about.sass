@@ -3,18 +3,25 @@ $details-color: #D6AF4F
 
 #about 
     font-family: 'Inter'
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
     .backgroundModalOn
         width: 100%
         left:0
-        height: 1000%
+        height: 100%
         top:0
         position: absolute
         background: rgba(0, 0, 0, 0.4)
         backdrop-filter: blur(10px)
         display: flex
         justify-content: center
-        z-index: 1000
+        z-index: 1
         cursor: pointer
+
+    .config 
+        width: 70%
     
     .backgroundModalOff
         display: none
@@ -233,7 +240,7 @@ $details-color: #D6AF4F
                 left: 15%
             h1
                 padding: 0 20px
-                font-size: 4.5rem
+                font-size: 4rem
                 font-weight: 700  
             p   
                 padding: 0 20px

@@ -52,6 +52,7 @@ export function Contact() {
                 <div className={redesocial ? "contenteSocialCell" : "contentSocial"} onClick={() => {redesocial ? setRedesocial(!redesocial) : setRedesocial(redesocial)}}>
                     <div className="modal">
                         <h3>{redesocial ? "Nossos numeros" : "Sociais"}</h3>
+                        <div className="details"></div>
                         <div className="buttonClose"></div>
                         <div className="networkSocial">
                             <a href="https://www.facebook.com/Condacs-Contabilidade-103618002125801/" rel="noreferrer" target="_blank">
@@ -79,10 +80,18 @@ export function Contact() {
                             <h2>(16) 99442-3535</h2>
                         </div>
 
+                        <p>Depto Pessoal</p>
+                        <div className="whatsapp">
+                            <a href="https://api.whatsapp.com/send?phone=5516993303636">
+                                <IconWhatsapp />
+                            </a>
+                            <h2>(16) 99330-3636</h2>
+                        </div>
+
                         <p>Escritorio</p>
                         <div className="whatsapp">
                             <h3>📞</h3>
-                            <h2>(16) 3725-0009</h2>
+                            <h2>(16) 3725-2500</h2>
                         </div>
                     </div>
                 </div>

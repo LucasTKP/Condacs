@@ -12,8 +12,8 @@ export function Home() {
     <div className="body">
     <div className="pages">
         <Header />
-      <div className="align">
         <About />
+      <div className="align">
         <Services />
         <Local />
       </div>
