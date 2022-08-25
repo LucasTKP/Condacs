@@ -31,6 +31,8 @@ $details-color: #D6AF4F
             font-size:2.4rem
             font-weight: 700
             cursor: pointer
+            &:hover
+                background: rgba(164, 125, 59, 0.5)
 
     .details
         width: 380px
@@ -59,7 +61,15 @@ $details-color: #D6AF4F
                     display: none
             :nth-child(3)
                 margin-top: 2.5rem
-                font-size: 2rem
+                font-size: 3.2rem
+
+        .details
+            display: none
+
+@media (max-width: 600px)
+    #services
+        :nth-child(3)
+            font-size: 2.7rem
 
         .details
             display: none

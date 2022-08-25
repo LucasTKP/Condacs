@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import "../styles/components/PageServices.sass"
 import { ReactComponent as LogoCondacs } from '../image/logoCondacs.svg';
 import { ReactComponent as Logo2Core } from '../image/logo.svg';
+import { useNavigate } from "react-router-dom";
 
 
 export function PageService() {
   const [visible, setVisible] = useState(false)
+  let navigate = useNavigate();
   return (
     <div id="pageServices">
       <div className="imageServices">
@@ -14,9 +16,9 @@ export function PageService() {
                 <LogoCondacs />
                 <button className={visible ? 'hamburguerClose' : "hamburguer"} onClick={() => setVisible(!visible)}></button>
                 <div className={visible ? "navigationCascata" : 'navigation'}>
-                      <a href="#about" onClick={() => setVisible(!visible)} >Sobre</a>
-                      <a href="#services" onClick={() => setVisible(!visible)} >Serviços</a>
-                      <a href="#contact"onClick={() => setVisible(!visible)} >Contato</a>
+                      <a href="#about" onClick={() => (setVisible(!visible) & navigate('/'))}>Sobre</a>
+                      <a href="#services" onClick={() => (setVisible(!visible) & navigate('/'))} >Serviços</a>
+                      <a href="#contact"onClick={() => (setVisible(!visible) & navigate('/'))} >Contato</a>
                       <button>Login</button>
                 </div>
             </div>
