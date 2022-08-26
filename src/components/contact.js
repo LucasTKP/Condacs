@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from '../image/logo.svg';
 import { ReactComponent as IconFacebook } from '../image/iconFacebook.svg';
 import { ReactComponent as IconInstagram } from '../image/iconInstagram.svg';
 import { ReactComponent as IconWhatsapp } from '../image/iconWhatsapp.svg';
+import { ReactComponent as Telephone } from '../image/telephone.svg';
 import emailjs from '@emailjs/browser';
 
 export function Contact() {
@@ -90,7 +91,7 @@ export function Contact() {
 
                         <p>Escritorio</p>
                         <div className="whatsapp">
-                            <h3>📞</h3>
+                            <Telephone className="telefone"/>
                             <h2>(16) 3725-2500</h2>
                         </div>
                     </div>
