@@ -13,7 +13,7 @@ export function Services() {
         <p>Temos serviços projetados para o atender e dar suporte em qualquer fase de sua empresa.</p>
         <a type='button' href="#pageServices" className='ButtonPageService' onClick={() => navigate('/PageServices/')}>
             Serviços
-        </button>
+        </a>
       </div>
       <img src={handWithCell} alt="Mão segurando um celular"></img>
       
