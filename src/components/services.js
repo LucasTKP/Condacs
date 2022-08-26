@@ -11,7 +11,7 @@ export function Services() {
         <p className="after">Nossos Serviços</p>
         <div className='details'></div>
         <p>Temos serviços projetados para o atender e dar suporte em qualquer fase de sua empresa.</p>
-        <a type='button' href="#pageServices" className='ButtonPageService' onClick={() => navigate('/PageServices/')}>
+        <a href="#pageServices" className='ButtonPageService' onClick={() => navigate('/PageServices/')}>
             Serviços
         </a>
       </div>
