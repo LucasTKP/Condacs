@@ -12,7 +12,7 @@ export function Header() {
           <Logo />
           <button className={visible ? 'hamburguerClose' : "hamburguer"} onClick={() => setVisible(!visible)}></button>
           <div className={visible ? "navigationCascata" : 'navigation'}>
-                <a href="#about" onClick={() => setVisible(!visible)} className="ButtonsPage">Sobre</a>
+                <a href="#about" onClick={() => setVisible(!visible)} className="buttonsNavigation">Sobre</a>
                 <a href="#services" onClick={() => setVisible(!visible)} >Serviços</a>
                 <a href="#contact"onClick={() => setVisible(!visible)} >Contato</a>
                 <a href='https://condacs.vercel.app/' className="buttonLogin">Login</a>

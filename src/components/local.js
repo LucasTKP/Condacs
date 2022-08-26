@@ -23,7 +23,7 @@ export function Local() {
               <div>
                 <Clock />
               </div>
-              <p>Abertos de segunda a sexta - 08:00 hrs ás 18:00 hrs</p>
+              <p>Abertos de segunda a sexta - 08:00 hrs ás 11:15 hrs, retorno das 13:00 as 17:00 hrs</p>
             </div>
           </div>
           <img src={ImageCondacs} className="imageCondacs" alt="Imagem da empresa Condacs"></img>

@@ -21,10 +21,8 @@ export function PageService() {
                       <a href="#services" onClick={() => (setHeaderVisible(!headerVisible) & navigate('/'))} >Serviços</a>
                       <a href="#contact"onClick={() => (setHeaderVisible(!headerVisible) & navigate('/'))} >Contato</a>
                       <a href='https://condacs.vercel.app/' className='buttonLogin'>Login</a>
-                      
                 </div>
             </div>
-            
             <div className="textServices">
               <h1>Serviços</h1>
             </div>
@@ -98,14 +96,10 @@ export function PageService() {
                     <li className="textBox">Definição do porte da empresa;</li>
                     <li className="textBox">Escolha do regime tributário e verificação das alíquotas de imposto.</li>
                   </ul>
-
-
-
-                </div>
               </div>
+            </div>
         </div>
       </div>
-
         <div className='navBar'>
           <div className='contentNavBar'>
             <p>Todos os direitos reservados @2022</p>

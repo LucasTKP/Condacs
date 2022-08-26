@@ -8,10 +8,10 @@ export function Services() {
   return (
     <div id="services">
       <div className="textServices">
-        <p className="after">Nossos Serviços</p>
+        <p>Nossos Serviços</p>
         <div className='details'></div>
         <p>Temos serviços projetados para o atender e dar suporte em qualquer fase de sua empresa.</p>
-        <button type='button' className='ButtonPageService' onClick={() => navigate('/PageServices')}>
+        <button type='button' className='ButtonPageService' onClick={() => navigate('/PageServices/#pageServices')}>
             Serviços
         </button>
       </div>

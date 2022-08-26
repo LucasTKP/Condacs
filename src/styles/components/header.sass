@@ -21,12 +21,6 @@ $details-color: #D6AF4F
         :first-child
             z-index: 50
 
-    .hamburguer
-        display: none
-
-    .hamburguerClose
-        display: none
-
     .navigation, .navigationCascata
         display: flex
         align-items: center
@@ -72,12 +66,19 @@ $details-color: #D6AF4F
         &:hover
             background: rgba(164, 125, 59, 0.5)
 
+    .hamburguer
+        display: none
+
+    .hamburguerClose
+        display: none
+
     
 
 @media (max-width:800px) 
     @keyframes Header    
         0%
             transform: translate(calc(100%))
+
     .background
         .navigationCascata
             animation-name: Header
@@ -97,7 +98,7 @@ $details-color: #D6AF4F
             flex-direction: column
             align-items: center
             justify-content: flex-start
-            :first-child
+            .buttonsNavigation
                 margin-top: 150px
 
             a      
@@ -128,7 +129,6 @@ $details-color: #D6AF4F
                 &:hover
                     background: rgba(164, 125, 59, 0.5)
 
-
         .hamburguerClose
             transition: 0.4s
             z-index: 2
@@ -155,7 +155,6 @@ $details-color: #D6AF4F
                 transform: rotate(90deg)
                 border-radius: .8rem
                 background: #fff
-
 
         .hamburguer
             transition: 0.4s
@@ -192,6 +191,7 @@ $details-color: #D6AF4F
                 left:0
                 border-radius: .8rem
                 background: #fff    
+                
         .navigation
             display: none
 

@@ -19,9 +19,6 @@ $details-color: #D6AF4F
         justify-content: center
         z-index: 1
         cursor: pointer
-
-    .config 
-        width: 70%
     
     .backgroundModalOff
         display: none
@@ -45,8 +42,6 @@ $details-color: #D6AF4F
             align-self: flex-end
             margin: 20px 20px 0
             cursor: pointer
-            
-
         h1
             margin-left: 30px
             font-family: 'Josefin Sans'
@@ -60,7 +55,7 @@ $details-color: #D6AF4F
             font-size: 44px
             max-width: 720px
             text-align: left
-        
+
     .detailsModal 
         width: 259px
         height: 5px
@@ -68,6 +63,9 @@ $details-color: #D6AF4F
         border-radius: 10px
         margin-top: 7%
         align-self: center
+
+    .config 
+        width: 70%
 
     .textAbout
         :first-child
@@ -103,7 +101,6 @@ $details-color: #D6AF4F
         border-radius: .8rem
         background: #32221D
         border: none
-        
         h1 
             font-size: 3.2rem
             font-weight: 700
@@ -149,21 +146,10 @@ $details-color: #D6AF4F
                   
 @media (max-width: 1050px)
     #about 
-        .statistics
-            h1
-                padding: 20px
-                font-size: 6.5rem
-                font-weight: 700  
-            p   
-                padding: 20px
-                font-size: 2rem
-                font-weight: 500 
-
         .modal
             width: 700px
             height: 500px
             align-items: center
-            
             h1
                 font-size: 50px
                 margin: 0px
@@ -179,9 +165,32 @@ $details-color: #D6AF4F
         .detailsModal 
             width: 259px
             height: 5px
+        
+        .statistics
+            h1
+                padding: 20px
+                font-size: 6.5rem
+                font-weight: 700  
+            p   
+                padding: 20px
+                font-size: 2rem
+                font-weight: 500 
 
 @media (max-width: 750px)
     #about 
+        .modal
+            width: 550px
+            height: 500px
+            h1
+                font-size: 48px
+                margin-top: 20px
+            p   
+                font-size: 32px
+            :first-child
+                width: 40px
+                height: 40px
+                margin: 5px 10px 0px 0px
+    
         .statistics
             h1
                 padding: 20px
@@ -216,24 +225,9 @@ $details-color: #D6AF4F
         .details
             width: 20rem
             height: 5px
-            background: #32221D
-        
-        .modal
-            width: 550px
-            height: 500px
-            h1
-                font-size: 48px
-                margin-top: 20px
-            p   
-                font-size: 32px
-            :first-child
-                width: 40px
-                height: 40px
-                margin: 5px 10px 0px 0px
-        
+            background: #32221D             
 
-
-@media (max-width: 600px)
+@media (max-width: 640px)
      #about 
         .statistics
             &:after

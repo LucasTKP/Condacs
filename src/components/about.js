@@ -7,7 +7,7 @@ import { ReactComponent as CloseModal } from '../image/closedModal.svg';
 
 export function About() {
     const [modal, setModal] = useState(false)
-    const [contentModal, setContentModal] = useState({Title: 'a', Message: ''})
+    const [contentModal, setContentModal] = useState({Title: '', Message: ''})
 
     const GiveContentModal = (type) => {
         if(type === "confianca"){
@@ -20,7 +20,6 @@ export function About() {
     }
   return (
     <div id='about'>
-        
         <div onClick={() => setModal(!modal)} className={modal ? 'backgroundModalOn' : "backgroundModalOff"}>
             <div id="outModal">
                 <button className='modal'>
@@ -33,11 +32,12 @@ export function About() {
                 </button>
             </div>
         </div>
+        <div className="config">
         <div className="textAbout">
             <p>Sobre Nós</p>
             <p>Com mais de 30 anos de experiência na área contabil, conheça nossas principais ideologias:</p>
         </div>
-        <div className="config">
+        
         <div className="buttonAbout">
             <a href='#outModal'>
                 <button type="button" className="card" onClick={() => (setModal(true) & GiveContentModal('confianca'))}>
