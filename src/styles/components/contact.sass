@@ -3,11 +3,11 @@ $details-color: #D6AF4F
 
 #contact
     margin-top:8.7rem
-    background: url('../../image/imageContact.png')
+    background-image: url('../../image/imageContact.png')
     background-repeat: no-repeat
     background-position: center
     width: 100%
-    height: 89.6rem
+    height: 890px
 
     .config
         display: flex
@@ -112,33 +112,32 @@ $details-color: #D6AF4F
             color: $base-color
 
     .navBar
-        margin-top: 10rem
         display: flex
-        justify-content: space-between
+        flex-direction: column
         justify-content: center
-        
-    .contentNavBar
-        display: flex
-        justify-content: space-between
         align-items: center
-        width: 120rem
-        margin: 0 1rem
-        position: relative
+        position: absolute
+        width: 100%
+        bottom: 0
         &::before
             content: ""
             width: 100%
             height: .2rem
             background: $base-color
-            position: absolute
-            bottom: 8rem
-            left: 0
+        
+    .contentNavBar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 80%
+        margin: 20px
         p
             align-items: center
             display: flex
             font-family: 'Inter'
             font-weight: 300
             font-size: 2.4rem
-            height: 100%
+            margin-right: 10px
 
     
 
@@ -249,8 +248,13 @@ $details-color: #D6AF4F
                 font-family: 'Inter'
                 margin-left: 10px
                 font-size: 3rem
-        .navBar
-            margin-top: 5rem
+
+        .contentNavBar
+            p
+                font-size: 1.3rem
+                max-width: 240px
+            :last-child
+                width: 90px
   
 
 @media (max-width: 615px)
@@ -278,12 +282,6 @@ $details-color: #D6AF4F
             align-self: center
             height: 5rem
                     
-        .contentNavBar
-            p
-                font-size: 2rem
-                max-width: 240px
-            :last-child
-                width: 80px
 
         .contenteSocialCell
             h3
@@ -305,6 +303,8 @@ $details-color: #D6AF4F
             width: 100px
             height: .5rem
             background: white
+
+
     
         
      
@@ -337,7 +337,7 @@ $details-color: #D6AF4F
 
         .contentNavBar
             p
-                font-size: 1.5rem
+                font-size: 1.2rem
                 max-width: 240px
             :last-child
                 width: 80px

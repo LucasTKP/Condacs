@@ -14,7 +14,7 @@ export function PageService() {
       <div className="imageServices">
           <div className='config'>
             <div className='header'>
-                <LogoCondacs />
+                <LogoCondacs onClick={() => navigate("/")}/>
                 <button className={headerVisible ? 'hamburguerClose' : "hamburguer"} onClick={() => setHeaderVisible(!headerVisible)}></button>
                 <div className={headerVisible ? "navigationCascata" : 'navigation'}>
                       <a href="#about" onClick={() => (setHeaderVisible(!headerVisible) & navigate('/'))}>Sobre</a>

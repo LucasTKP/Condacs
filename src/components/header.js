@@ -9,7 +9,7 @@ export function Header() {
     <div className="background">
       <div className='config'>
         <div className='header'>
-          <Logo />
+          <Logo/>
           <button className={visible ? 'hamburguerClose' : "hamburguer"} onClick={() => setVisible(!visible)}></button>
           <div className={visible ? "navigationCascata" : 'navigation'}>
                 <a href="#about" onClick={() => setVisible(!visible)} className="buttonsNavigation">Sobre</a>
@@ -20,8 +20,8 @@ export function Header() {
         </div>
 
         <div className="nameCompany">
-          <p>Condacs</p>
-          <p>Acessoria Contábil</p>
+          <p>CONDACS</p>
+          <p>Assessoria Contábil</p>
         </div>
 
         <a href="#contact">

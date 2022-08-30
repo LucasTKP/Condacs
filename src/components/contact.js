@@ -100,8 +100,8 @@ export function Contact() {
         </div>
         <div className="navBar">
             <div className="contentNavBar">
-                <p>Todos os direitos reservados @2022</p>
-                <Logo />
+                    <p>Todos os direitos reservados @2022</p>
+                    <Logo />
             </div>    
         </div>  
     </div>
