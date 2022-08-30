@@ -59,14 +59,15 @@ export function PageService() {
                   <ul className={textTypeServices === 'fiscal' ? 'textVisible' : "textInvisible"}>
                     <li className="textBox">Efetua cálculos relacionados ao patrimônio da empresa, PIS e COFINS.</li>
                     <li className='textBox'>Apura lucros e registros de tributos compensáveis.</li>
-                    <li className="textBox">Evita sonegação fiscal, adulteração de patrimônio e qualquer outro tipo de fraude.</li>
+                    <li className="textBox">Evitando sonegação fiscal, adulteração de patrimônio e qualquer outro tipo de fraude.</li>
                   </ul>
 
                   <ul className={textTypeServices === 'trabalhista' ? 'textVisible' : "textInvisible"}>
-                    <li className="textBox">Apurar e emitir os contracheques dos colaboradores;</li>
+                    <li className="textBox">Apurar e emitir holerits dos colaboradores;</li>
                     <li className='textBox'>Calcular o recibo do proprietário da empresa;</li>
                     <li className="textBox">Processar a Folha de Pagamento </li>
                     <li className="textBox">Preencher o Cadastro Geral de Empregados e Desempregados (CAGED). </li>
+                    <li className="textBox">Todas as informações relacinadas ao E-Social </li>
                   </ul>
 
                   <ul className={textTypeServices === 'auditoria' ? 'textVisible' : "textInvisible"}>
@@ -88,6 +89,7 @@ export function PageService() {
                     <li className="textBox">Elaboração de Contratos Sociais em acordo ao novo código civil;</li>
                     <li className="textBox">Obtenção de Alvarás e Licenças junto a Prefeitura;</li>
                     <li className="textBox">Obtenção de Certidões Negativas.</li>
+                    <li className="textBox">Abertura de igrejas e Associações</li>
                   </ul>
 
                   <ul className={textTypeServices === 'empresas' ? 'textVisible' : "textInvisible"}>

@@ -12,7 +12,7 @@ export function Local() {
     <div className="local">
         <div className="textLocal">
             <p>Nosso Local</p>
-            <p>Localizados em Franca Sp, temos um escritório pronto para lhe acolher!</p>
+            <p>Localizados em Franca SP, temos um escritório pronto para lhe acolher!</p>
         </div>
         <div className="images">
           <div>

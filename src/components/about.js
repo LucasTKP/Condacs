@@ -11,11 +11,11 @@ export function About() {
 
     const GiveContentModal = (type) => {
         if(type === "confianca"){
-            setContentModal({...modal, Title: 'Confiança', Message: 'Prezamos acima de tudo a Confiança que o cliente tem conosco, assim atuamos de forma transparente, com ética, honestidade, respeitando todas as leis.'})
+            setContentModal({...modal, Title: 'Confiança', Message: 'Prezamos acima de tudo a Confiança que o cliente tem conosco, assim atuamos de forma transparente, com ética, honestidade, aplicando as determinações do Fisco.'})
         } else if(type === "qualidade"){
             setContentModal({...modal, Title: 'Qualidade', Message: 'Um dos nossos maiores objetivos é fazer sempre o melhor serviço para o cliente proporcionando a satisfação dos mesmos. Nossos anos de experiência vem provando isso!'})
         } else if(type === "equipe"){
-            setContentModal({...modal, Title: 'Equipe', Message: 'Fazemos este serviço por mera paixão, com uma equipe focada e com o melhor desempenho do mercado, entregando sempre mais do que o esperado.'})
+            setContentModal({...modal, Title: 'Equipe', Message: 'Fazemos este serviço por mera paixão, com uma equipe focada e com o melhor desempenho do mercado, entregando sempre o que esta dentro do nosso alcance.'})
         }
     }
   return (

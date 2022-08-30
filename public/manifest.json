@@ -1,0 +1,25 @@
+{
+    "short_name": "Condacs",
+    "name": "Condacs escritório de contabilidade",
+    "icons": [
+      {
+        "src": "../src/image/logoCondacs.svg",
+        "sizes": "64x64 32x32 24x24 16x16",
+        "type": "image/svg"
+      },
+      {
+        "src": "../src/image/logoCondacs.svg",
+        "type": "image/svg",
+        "sizes": "192x192"
+      },
+      {
+        "src": "../src/image/logoCondacs.svg",
+        "type": "image/svg",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
