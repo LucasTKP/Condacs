@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/components/local.sass'
 import  Maps from '../image/maps.png'
-import  ImageCondacs from '../image/imageCondacs.png'
+import  ImageCondacs from '../image/imageCondacs.jpeg'
 import { ReactComponent as Clock } from '../image/clock.svg'
 
 
@@ -23,7 +23,7 @@ export function Local() {
               <div>
                 <Clock />
               </div>
-              <p>Abertos de segunda a sexta - 08:00 hrs ás 11:15 hrs, retorno das 13:00 as 17:00 hrs</p>
+              <p>Abertos de segunda a sexta - das 08:00 ás 11:15 hrs, retorno das 13:00 as 17:30 hrs</p>
             </div>
           </div>
           <img src={ImageCondacs} className="imageCondacs" alt="Imagem da empresa Condacs"></img>

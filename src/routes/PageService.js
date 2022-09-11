@@ -57,8 +57,8 @@ export function PageService() {
                   </ul>
 
                   <ul className={textTypeServices === 'fiscal' ? 'textVisible' : "textInvisible"}>
-                    <li className="textBox">Efetua cálculos relacionados ao patrimônio da empresa, PIS e COFINS.</li>
-                    <li className='textBox'>Apura lucros e registros de tributos compensáveis.</li>
+                    <li className="textBox">Efetua cálculos relacionados ao patrimônio da empresa, PIS e COFINS, IMP DE RENDA e CONT. SOCIAL.</li>
+                    <li className='textBox'>Apuração de lucros/Prejuizos, registros...</li>
                     <li className="textBox">Evitando sonegação fiscal, adulteração de patrimônio e qualquer outro tipo de fraude.</li>
                   </ul>
 
@@ -89,7 +89,7 @@ export function PageService() {
                     <li className="textBox">Elaboração de Contratos Sociais em acordo ao novo código civil;</li>
                     <li className="textBox">Obtenção de Alvarás e Licenças junto a Prefeitura;</li>
                     <li className="textBox">Obtenção de Certidões Negativas.</li>
-                    <li className="textBox">Abertura de igrejas e Associações</li>
+                    <li className="textBox">Abertura de Igrejas e Associações</li>
                   </ul>
 
                   <ul className={textTypeServices === 'empresas' ? 'textVisible' : "textInvisible"}>
@@ -97,6 +97,7 @@ export function PageService() {
                     <li className='textBox'>Escolha da natureza jurídica;</li>
                     <li className="textBox">Definição do porte da empresa;</li>
                     <li className="textBox">Escolha do regime tributário e verificação das alíquotas de imposto.</li>
+                    <li className="textBox">Desenquadramento e Transformação de MEI para MICROEMPRESA</li>
                   </ul>
               </div>
             </div>
