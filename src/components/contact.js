@@ -66,28 +66,28 @@ export function Contact() {
                         </div>
 
                         <p>Contabilidade</p>
-                        <div className="whatsapp">
+                        <a href="https://api.whatsapp.com/send?phone=5516994423535"  rel="noreferrer" target="_blank" className="whatsapp">
                             <a href="https://api.whatsapp.com/send?phone=5516993344700" rel="noreferrer" target="_blank">
                                 <IconWhatsapp />
                             </a>
                             <h2>(16) 99334-4700</h2>
-                        </div>
+                        </a>
 
                         <p>Fiscal</p>
-                        <div className="whatsapp">
+                        <a href="https://api.whatsapp.com/send?phone=5516994423535"  rel="noreferrer" target="_blank" className="whatsapp">
                             <a href="https://api.whatsapp.com/send?phone=5516994423535" rel="noreferrer" target="_blank">
                                 <IconWhatsapp />
                             </a>
                             <h2>(16) 99442-3535</h2>
-                        </div>
+                        </a>
 
                         <p>Depto Pessoal</p>
-                        <div className="whatsapp">
+                        <a href="https://api.whatsapp.com/send?phone=5516993303636"  rel="noreferrer" target="_blank" className="whatsapp">
                             <a href="https://api.whatsapp.com/send?phone=5516993303636" rel="noreferrer" target="_blank">
                                 <IconWhatsapp />
                             </a>
                             <h2>(16) 99330-3636</h2>
-                        </div>
+                        </a>
 
                         <p>Escritorio</p>
                         <div className="whatsapp">
