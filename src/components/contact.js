@@ -66,7 +66,7 @@ export function Contact() {
                         </div>
 
                         <p>Contabilidade</p>
-                        <a href="https://api.whatsapp.com/send?phone=5516994423535"  rel="noreferrer" target="_blank" className="whatsapp">
+                        <a href="https://api.whatsapp.com/send?phone=5516993344700"  rel="noreferrer" target="_blank" className="whatsapp">
                             <a href="https://api.whatsapp.com/send?phone=5516993344700" rel="noreferrer" target="_blank">
                                 <IconWhatsapp />
                             </a>
@@ -90,10 +90,10 @@ export function Contact() {
                         </a>
 
                         <p>Escritorio</p>
-                        <div className="whatsapp">
+                        <a href="tel:+551637252500 "  rel="noreferrer" target="_blank" className="whatsapp">
                             <Telephone className="telefone"/>
                             <h2>(16) 3725-2500</h2>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
