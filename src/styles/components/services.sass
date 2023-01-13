@@ -1,0 +1,104 @@
+$base-color: #C49545
+$details-color: #D6AF4F
+
+#services
+    margin-top: 14rem
+    font-family: 'Inter'
+    display: flex
+    justify-content: space-between
+
+
+    .textServices   
+        :first-child
+            font-size: 4.8rem
+            font-weight: 400
+            position: relative
+            padding-bottom: 1.4rem
+            width: 100% 
+        :nth-child(3)
+            margin-top: 6.4rem
+            font-size: 3rem
+            font-weight: 500
+            max-width: 60.8rem
+        .ButtonPageService
+            text-decoration: none
+            margin-top: 5rem
+            width: 21rem
+            height: 5.8rem
+            border: .3rem solid #32221D
+            border-radius: 8px
+            font-size:2.4rem
+            font-weight: 700
+            cursor: pointer
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                background: rgba(164, 125, 59, 0.5)
+
+    .details
+        width: 380px
+        height: 5px
+        background: #fff
+
+@media (max-width: 1250px)
+    #services
+        img
+            width: 300px
+            height: 350px
+
+
+@media (max-width: 865px)
+    #services
+        img
+            display: none
+
+        .textServices   
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            :nth-child(3)
+                margin-top: 2.5rem
+                font-size: 3.2rem
+
+        .details
+            display: none
+
+@media (max-width: 600px)
+    #services
+        :nth-child(3)
+            font-size: 2.7rem
+
+        .details
+            display: none
+
+
+@media (max-width: 480px)
+    #services
+        margin-top: 8rem
+        .textServices 
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center  
+            :first-child
+                width: 240px
+                font-size: 3rem
+            :nth-child(3)
+                margin-top: 3rem
+                font-size: 2rem
+            :last-child
+                margin-top: 5rem
+                width: 15rem
+                height: 4rem
+                border: .3rem solid #32221D
+                border-radius: 8px
+                background: none
+                font-size:1.5rem
+                font-weight: 700
+
+        
+
+
+   
