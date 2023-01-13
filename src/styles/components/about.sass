@@ -1,0 +1,331 @@
+$base-color: #C49545
+$details-color: #D6AF4F
+
+#about 
+    font-family: 'Inter'
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    .backgroundModalOn
+        width: 100%
+        left:0
+        height: 100%
+        top:0
+        position: absolute
+        background: rgba(0, 0, 0, 0.4)
+        backdrop-filter: blur(10px)
+        display: flex
+        justify-content: center
+        z-index: 1
+        cursor: pointer
+    
+    .backgroundModalOff
+        display: none
+
+    #outModal
+        width: 100%
+        height: 100vh
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .modal
+        width: 700px
+        height: 500px
+        background: rgba(30, 30, 30, 1)
+        border-radius: 24px
+        display: flex
+        flex-direction: column
+        border: 5px solid rgba(214, 175, 79, 1)
+        :first-child
+            align-self: flex-end
+            margin: 20px 20px 0
+            cursor: pointer
+        h1
+            margin-left: 30px
+            font-family: 'Josefin Sans'
+            font-weight: 400
+            font-size: 54px
+        p   
+            margin-left: 50px
+            margin-top: 60px
+            font-family: 'Josefin Sans'
+            font-weight: 400
+            font-size: 36px
+            max-width: 720px
+            text-align: left
+
+    .detailsModal 
+        width: 259px
+        height: 5px
+        background: rgba(214, 175, 79, 1)
+        border-radius: 10px
+        margin-top: 7%
+        align-self: center
+
+    .config 
+        width: 70%
+
+    .textAbout
+        :first-child
+            margin-top: 20px
+            font-size: 4.8rem
+            font-weight: 400
+            position: relative
+            display: flex
+            flex-direction: column
+            padding-bottom: 1.5rem
+            &:after
+                content: ""
+                position: absolute
+                bottom: 0
+                width: 100px
+                height: 5px
+                background: #fff
+                position: absolute
+        :last-child
+            font-size: 3rem
+            font-weight: 500 
+            margin-top: 2rem
+            max-width: 78rem  
+
+    .buttonAbout
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    .card
+        margin-top: 7.4rem
+        width: 25.7rem
+        height: 25.7rem
+        border-radius: .8rem
+        background: #32221D
+        border: none
+        h1 
+            font-size: 3.2rem
+            font-weight: 700
+        p
+            font-size: 2.9rem
+            color: $base-color  
+            cursor: pointer  
+
+    .contentStatistics
+        display: flex
+        flex-direction: column
+        align-items: center
+        h6
+            margin-top: 8.4rem
+            font-weight: 700
+            font-size: 3.6rem    
+            max-width: 42.7rem
+            text-align: center
+        
+    .details
+        margin-top: 100px
+        width: 31.7rem
+        height: 5px
+        background: #32221D
+
+
+    .statistics
+        margin-top:4.4rem
+        display: flex
+        max-height: 30rem
+        justify-content: space-between
+        position: relative
+        text-align: center
+        h1
+            padding: 20px
+            font-size: 9.6rem
+            font-weight: 700  
+        p   
+            padding: 20px
+            font-size: 2.4rem
+            font-weight: 500  
+        
+              
+@media (max-width: 1050px)
+    #about 
+        .modal
+            width: 700px
+            height: 500px
+            align-items: center
+            h1
+                font-size: 50px
+                margin: 0px
+            p   
+                text-align: center
+                font-size: 36px
+                margin: 20px 50px 0px 50px
+            :first-child
+                width: 40px
+                height: 40px
+                margin: 5px 10px 0px 0px
+        
+        .detailsModal 
+            width: 259px
+            height: 5px
+        
+        .statistics
+            h1
+                padding: 20px
+                font-size: 6.5rem
+                font-weight: 700  
+            p   
+                padding: 20px
+                font-size: 2rem
+                font-weight: 500 
+
+@media (max-width: 750px)
+    #about 
+        .modal
+            width: 550px
+            height: 500px
+            h1
+                font-size: 48px
+                margin-top: 20px
+            p   
+                font-size: 32px
+            :first-child
+                width: 40px
+                height: 40px
+                margin: 5px 10px 0px 0px
+    
+        .statistics
+            h1
+                padding: 20px
+                font-size: 6rem
+                font-weight: 700  
+            p   
+                padding: 20px
+                font-size: 2rem
+                font-weight: 500 
+
+        .textAbout
+            display: flex
+            flex-direction: column
+            align-items: center
+            :first-child
+                &:after
+                    margin-left: 20px   
+                    width: 200px
+            :last-child
+                text-align: center
+
+        .buttonAbout
+            justify-content: center
+
+        .contentStatistics
+            align-items: center
+            display: flex
+            flex-direction: column
+            h6
+                text-align: center
+
+        .details
+            width: 20rem
+            height: 5px
+            background: #32221D             
+
+@media (max-width: 640px)
+     #about 
+        .statistics
+            &:after
+                left: 15%
+            h1
+                padding: 0 20px
+                font-size: 4rem
+                font-weight: 700  
+            p   
+                padding: 0 20px
+                font-size: 2rem
+                font-weight: 500 
+        .modal
+            width: 460px
+            height: 500px
+            h1
+                font-size: 40px
+                margin-top: 20px
+            p   
+                font-size: 30px
+            :first-child
+                width: 30px
+                height: 40px
+                margin: 5px 10px 0px 0px
+
+        
+@media (max-width: 480px)
+     #about 
+        .details
+            margin-top: 5rem
+        
+        .textAbout
+            :first-child
+                font-size: 3rem
+                &:after
+                    width: 100px
+            :last-child
+                font-size: 2rem
+                
+        .contentStatistics
+            h6
+                margin-top: 6.4rem
+                font-weight: 700
+                font-size: 2rem    
+                max-width: 42.7rem
+
+        .statistics
+            max-height: 20rem
+            &:after
+                left: 15%
+                width: 200px
+            h1
+                padding: 10px
+                font-size: 3.5rem
+                font-weight: 700  
+            p   
+                padding: 10px
+                font-size: 1.5rem
+                font-weight: 500 
+
+        .modal
+            width: 330px
+            height: 500px
+            h1
+                font-size: 36px
+                margin-top: 20px
+            p   
+                font-size: 26px
+            :first-child
+                width: 40px
+                height: 40px
+                margin: 5px 10px 0px 0px
+
+@media (max-width: 355px)
+     #about 
+        .details
+            margin-top: 2rem
+
+        .statistics
+            height: 14rem
+            h1
+                padding: 10px
+                font-size: 2.5rem
+                font-weight: 700  
+            p   
+                padding: 10px
+                font-size: 1rem
+                font-weight: 500 
+        .modal
+            width: 290px
+            height: 500px
+            h1
+                font-size: 34px
+                margin-top: 20px
+            p   
+                font-size: 24px
+            :first-child
+                width: 40px
+                height: 40px
+                margin: 5px 10px 0px 0px

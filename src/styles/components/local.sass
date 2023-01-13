@@ -1,0 +1,122 @@
+$base-color: #C49545
+$details-color: #D6AF4F
+
+.local
+    .textLocal
+        margin-top:10rem
+        align-items: center
+        display: flex
+        flex-direction: column
+        :first-child
+            font-size: 4.8rem
+            font-weight: 400
+            position: relative
+            padding-bottom: 2rem
+            font-family: 'Inter'
+            &::after
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 30%
+                width: 10rem
+                height: .5rem
+                background: #32221D
+                position: absolute
+        :last-child
+            font-family: 'josefin Sans'
+            margin-top: 6.4rem
+            font-size: 3.6rem
+            font-weight: 500
+            text-align: center
+    .images
+        margin-top: 6.8rem
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        :first-child
+            display: flex
+            flex-direction: column
+
+    .imageCondacs
+        margin-left: 5rem
+        max-width: 40rem
+        max-height: 55rem
+        border-radius: .8rem   
+        filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.45)) 
+
+    .imageMaps
+        max-width: 66.4rem
+        max-height: 41rem
+        border-radius: .8rem   
+        filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.45)) 
+        align-self: center
+
+    .clock 
+        display: flex
+        margin-top: 2rem
+        align-items: center
+        padding-bottom: 5rem
+        justify-content: space-between
+        :first-child
+            padding-right: .2rem
+        :last-child
+            font-size:2.4rem
+            font-weight: 300
+            font-family: 'Inter'
+
+@media (max-width: 730px)
+    .local
+        .imageCondacs
+            margin-left: 0rem
+            max-width: 40rem
+        .imageMaps
+            max-width: 50.4rem
+            max-height: 41rem
+
+@media (max-width: 600px)
+    .local
+        .textLocal
+            text-align: center
+            :last-child
+                font-size: 3rem
+    
+        .clock
+            text-align: center
+
+        .imageCondacs
+            max-width: 30rem
+        .imageMaps
+            max-width: 40.4rem
+            max-height: 41rem
+
+@media (max-width: 500px)
+    .local
+        .textLocal
+            :first-child
+                font-size: 3rem
+                &::after
+                    bottom: 0
+                    left: 20%
+            :last-child
+                font-size: 2rem
+                margin-top: 20px
+
+        .clock 
+            :last-child
+                font-size:2rem
+
+        .imageCondacs
+            max-width: 20rem
+        .imageMaps
+            max-width: 30.4rem
+            max-height: 41rem
+
+@media (max-width: 350px)
+    .local
+        .imageMaps
+            width: 25rem
+            height: 20rem
+
+    
+
+   
