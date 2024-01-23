@@ -2,7 +2,7 @@
 <p align="center">Este projeto foi uma landing page apresentando uma empresa de contabilidade</p> <br />
 
 ### 🔗 Links:
-<a href="https://github.com/LucasTKP/Condacs">Projeto LandingPage Condacs</a></br>
+<a href="https://github.com/LucasTKP/Condacs">Projeto Condacs</a></br>
 <a href="https://condacs-gray.vercel.app/">Deploy</a></br>
 
 </br>
